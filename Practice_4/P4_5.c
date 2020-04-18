@@ -33,23 +33,23 @@ int main()
 		} else {
 			ans = 2;
 			delta = sqrt(delta);
-			n1 = (b + delta) / (2*a);
-			n2 = (-b + delta) / (2*a);
+			n1 = (-b + delta) / (2*a);
+			n2 = (-b - delta) / (2*a);
 		}	
 	}
 
 	switch (ans) {
 		case 0:
-			printf("Phuong trinh vo nghiem\n");
+			printf("Phuong trinh vo nghiem");
 			break;
 		case 1:
-			printf("Phuong trinh vo so nghiem\n");
+			printf("Phuong trinh vo so nghiem");
 			break;
 		case 2:
 			if (n1 == n2)
-				printf("Phuong trinh co nghiem: %6.2f\n", n1);
+				printf("%f", n1);
 			else 
-				printf("Phuong trinh co nghiem: %6.2f %6.2f\n", n1, n2);
+				printf("%f\n%f", n1, n2);
 			break;
 	}
 

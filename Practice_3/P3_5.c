@@ -11,7 +11,7 @@ int main()
 	b = (x + y) * (x + y);
 	c = (x - y) * (x - y);
 
-	printf("a = %6.2f\nb = %6.2f\nc = %6.2f", a, b, c);
+	printf("%f\n%f\n%f", a, b, c);
 
 	return 0;
 }

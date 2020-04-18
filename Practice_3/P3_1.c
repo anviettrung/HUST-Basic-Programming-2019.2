@@ -3,15 +3,16 @@
 
 int main() 
 {
-	float x, y, z, f;
+	double x, y, z; 
+	double f;
 
-	scanf("%f", &x);
-	scanf("%f", &y);
-	scanf("%f", &z);
+	scanf("%lf", &x);
+	scanf("%lf", &y);
+	scanf("%lf", &z);
 
 	f = ((x + y + z) / (x*x + y*y + 1)) - fabs(x - z * cos(y));
 
-	printf("%6.2f", f);
+	printf("%f", f);
 
 	return 0;
 }

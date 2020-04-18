@@ -12,7 +12,7 @@ int main()
 		+ x*x*x*x*y*y + x*x*x*x*x*y
 		+ x*x*x*x*x*x;
 
-	printf("%6.2f", f);
+	printf("%f", f);
 
 	return 0;
 }

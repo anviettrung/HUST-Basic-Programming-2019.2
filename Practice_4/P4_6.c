@@ -8,8 +8,10 @@ int main()
 	s2 = 1;
 	s3 = 1;
 
-	scanf("%d", &n);
-	scanf("%f", &x);
+	do {
+		scanf("%d", &n);
+		scanf("%f", &x);
+	} while !(n > 0);
 
 	t = 1;
 	k = 1;
@@ -23,7 +25,7 @@ int main()
 		s3 += t / k;
 	}
 
-	printf("S1 = %6.2f\nS2 = %6.2f\nS3 = %6.2f", s1, s2, s3);
+	printf("%f\n%f\n%f", s1, s2, s3);
 
 	return 0;
 }

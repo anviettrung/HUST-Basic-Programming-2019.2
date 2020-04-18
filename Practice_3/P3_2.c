@@ -11,7 +11,7 @@ int main()
 	m = 2 * r * pi;
 	s = r * r * pi;
 
-	printf("%6.2f\n%6.2f", m, s);
+	printf("%f\n%f", m, s);
 
 	return 0;
 }

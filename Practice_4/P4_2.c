@@ -22,9 +22,9 @@ int main()
 	scanf("%d", &n);
 
 	if (IsPrime(n) == 1)
-		printf("La so nguyen to\n");
+		printf("La so nguyen to");
 	else
-		printf("Khong phai la so nguyen to\n");
+		printf("Khong phai so nguyen to");
 
 	return 0;
 }

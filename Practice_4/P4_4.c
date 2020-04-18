@@ -16,7 +16,7 @@ int main()
 	uc = UCLN(a, b);
 	bc = a * b / uc;
 
-	printf("UCLN = %d\nBCNN = %d", uc, bc);
+	printf("%d\n%d", uc, bc);
 
 	return 0;
 }
