@@ -1,17 +1,18 @@
-#include <stdio.h>
-#include <math.h>
+#include <iostream>
+#include <complex>
+
+using namespace std;
 
 int main() 
 {
-	double a, b, c;
-	double n1, n2;
-	double r, i; // cho so phuc
+	float a, b, c;
+	float n1, n2;
 	int ans = 0;
-	// Quy uoc: 0 = vo nghiem | 1 = vo so nghiem | 2 = n0 bthg | 3 = n0 phuc
+	// Quy uoc: 0 = vo nghiem | 1 = vo so nghiem | 2 = else
 
-	scanf("%lf", &a);
-	scanf("%lf", &b);
-	scanf("%lf", &c);
+	scanf("%f", &a);
+	scanf("%f", &b);
+	scanf("%f", &c);
 
 	if (a == 0) {
 
@@ -28,11 +29,9 @@ int main()
 
 	} else {
 
-		double delta = b*b - 4*a*c;
+		float delta = b*b - 4*a*c;
 		if (delta < 0) {
-			ans = 3;
-			r = -b / (2*a);
-			i = sqrt(fabs(delta)) / (2*a);
+			ans = 0;
 		} else {
 			ans = 2;
 			delta = sqrt(delta);
@@ -53,9 +52,6 @@ int main()
 				printf("%f", n1);
 			else 
 				printf("%f\n%f", n1, n2);
-			break;
-		case 3:
-			printf("%f-%fi %f+%fi\n", r, i, r, i);
 			break;
 	}
 
