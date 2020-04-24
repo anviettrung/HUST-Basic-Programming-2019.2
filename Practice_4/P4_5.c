@@ -55,7 +55,7 @@ int main()
 				printf("%f\n%f", n1, n2);
 			break;
 		case 3:
-			printf("%f-%fi %f+%fi\n", r, i, r, i);
+			printf("%f+%fi\n%f-%fi\n", r, i, r, i);
 			break;
 	}
 
