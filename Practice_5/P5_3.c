@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
  
-const int LIMIT= 155;
+const int LIMIT = 155;
  
 char convert(char k)
 {
